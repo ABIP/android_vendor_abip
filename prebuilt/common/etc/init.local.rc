@@ -1,4 +1,4 @@
-# CyanogenMod Extras
+# ABIP Extras
 import /init.superuser.rc
 
 on init
