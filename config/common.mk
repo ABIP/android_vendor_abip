@@ -70,10 +70,6 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/abip/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
-
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
@@ -143,7 +139,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     LockClock \
-    CMUpdater \
     CMAccount \
     CMHome
 
@@ -207,12 +202,6 @@ PRODUCT_PACKAGES += \
     procrank \
     Superuser \
     su
-
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/abip/proprietary/Term.apk:system/app/Term.apk \
-    vendor/abip/proprietary/lib/armeabi/libjackpal-androidterm5.so:system/lib/libjackpal-androidterm5.so \
-    vendor/abip/proprietary/lib/armeabi/libjackpal-termexec2.so:system/lib/libjackpal-termexec2.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
