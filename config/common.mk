@@ -140,7 +140,9 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     CMAccount \
-    CMHome
+    CMHome \
+    ScreenRecorder \
+    libscreenrecorder
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
