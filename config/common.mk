@@ -217,8 +217,8 @@ endif
 PRODUCT_PACKAGE_OVERLAYS += vendor/abip/overlay/common
 
 ABIP_RELEASE = false
-ABIP_VERSION_MAJOR = 4.4
-ABIP_VERSION_MINOR = 4
+ABIP_VERSION_MAJOR = KK
+ABIP_VERSION_MINOR = Alpha-1
 
 # release
 ifeq ($(ABIP_RELEASE),true)
